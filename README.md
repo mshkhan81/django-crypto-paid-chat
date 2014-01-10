@@ -23,3 +23,11 @@ Quick Start
 
 
 [django-cryptocoin]:https://github.com/quantum13/django-cryptocoin
+
+
+Donate
+======
+
+* BTC: 1JrV8GW9HWRHWvJNQ14fExAkfgxawAY4oq
+* LTC: LiHkeymborDtpqUh3ExYT9CXJkyucDH4Cc
+* NVC: 4U5F4GQin6QkTpbd5k9si3f4iSkn2o3v9x

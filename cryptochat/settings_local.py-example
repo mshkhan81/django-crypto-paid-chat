@@ -17,18 +17,21 @@ CRYPTO_COINS = {
     'btc': 'Bitcoin',
     'ltc': 'Litecoin',
     'nvc': 'Novacoin',
+    'emc': 'Emercoin',
 }
 
 CONNECTION_STRING = {
     'btc': 'http://user:pass@localhost:8332',
     'ltc': 'http://user:pass@localhost:9332',
     'nvc': 'http://user:pass@localhost:8344',
+    'emc': 'http://user:pass@localhost:8100',
 }
 
 CONFIRMATIONS = {
     'btc': 1,
-    'ltc': 2,
-    'nvc': 3,
+    'ltc': 1,
+    'nvc': 1,
+    'emc': 1,
 }
 
 PROCESS_TEMPLATE = 'process.html'

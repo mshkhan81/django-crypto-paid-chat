@@ -13,8 +13,11 @@ def home(request):
     price_usd = Decimal(0.1)
     crypto_prices = {}
     for currency in CRYPTO_COINS.keys():
-        crypto_prices[currency] = Decimal(price_usd * ExchangeRate.get_exchange_rate('usd', currency))\
-            .quantize(Decimal(10) ** -5, rounding=ROUND_HALF_UP)
+        try:
+            rate = ExchangeRate.get_exchange_rate('usd', currency)
+        except Exception, e:
+            rate = 1
+        crypto_prices[currency] = Decimal(price_usd * rate).quantize(Decimal(10) ** -5, rounding=ROUND_HALF_UP)
 
     form = OrderForm(request.POST or None)
     if form.is_valid():
